@@ -75,5 +75,6 @@ typings/
 # FuseBox cache
 .fusebox/
 
-# Authorization token
+# private configs
 token.json
+server-config.json

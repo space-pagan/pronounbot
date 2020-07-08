@@ -8,9 +8,9 @@ module.exports = (client, message) => {
 			cmd.run(client, message, args);
 		}else{
 			if (command != "") {
-				message.channel.send(message.member + ', the command "' + command + '" is not a valid command. Please enter "' + client.config.prefix + ' help" for a list of commands.');
+				message.channel.send(message.member + ', the command `' + command + '` is not a valid command. Please enter `' + client.config.prefix + ' help` for a list of commands.');
 			}else{
-				message.channel.send(message.member + ', please enter "' + client.config.prefix + ' help" for a list of commands.');
+				message.channel.send(message.member + ', please enter `' + client.config.prefix + ' help` for a list of commands.');
 			}
 		}
 	}

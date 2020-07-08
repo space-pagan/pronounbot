@@ -4,9 +4,9 @@ exports.run = (client, message, args) => {
 		if(prRole){
 			var prName = prRole.name;
             message.member.removeRole(prRole).catch(console.error);
-			message.channel.send(message.member + ", " + prName.substring(4) + " has been removed from your pronouns.");
+			message.channel.send(message.member + ", `" + prName.substring(4) + "` has been removed from your pronouns.");
 		}else{
-			message.channel.send(message.member + ', you do not have the pronoun role "' + args[0] + '"!');
+			message.channel.send(message.member + ', you do not have the pronoun role `' + args[0] + '`!');
 		}
 	}else{
 		message.channel.send(message.member + ", please specify the pronoun that you would like to remove!");

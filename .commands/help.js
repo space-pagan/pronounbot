@@ -13,7 +13,7 @@ exports.run = (client, message, args) => {
 				msgString += "\nExample: " + client.config.prefix + " " + cmd.example;
 			}
 		}else{
-			msgString = ', "' + args[0] + '" is not a valid command. Please enter "' + client.config.prefix + ' help" for a list of commands.';
+			msgString = ', the command `' + args[0] + '` is not a valid command. Please enter `' + client.config.prefix + ' help` for a list of commands.';
 		}
 	}else{
 		msgString = "\nThe available commands are:\n";
@@ -23,7 +23,7 @@ exports.run = (client, message, args) => {
 			}
 			return true;
 		});
-		msgString += '\nTo see command details, enter "' + client.config.prefix + ' help " followed by the command.';
+		msgString += '\nTo see command details, enter `' + client.config.prefix + ' help ` followed by the command.';
 	}
 	message.channel.send(message.member + msgString);
 }

@@ -3,10 +3,13 @@ const Enmap = require("enmap");
 const fs = require("fs");
 
 const client = new Discord.Client();
-const config = require('./config.json');
-const auth = require('./token.json');
+const config = require('./.config/config.json');
+const auth = require('./.config/token.json');
+var serverconfig = require('./.config/server-config.json');
 client.config = config;
+client.serverconfig = serverconfig;
 client.enmap = Enmap;
+client.fs = fs;
 
 fs.readdir("./.events/", (err, files) => {
 	if (err) return console.error(err);

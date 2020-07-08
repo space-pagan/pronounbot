@@ -1,4 +1,4 @@
-exports.run = (client, message, args) => {
+exports.run = (client, message, args, prefix) => {
 	if(args[0]){
 		var prRole = message.member.roles.find(role => (role.name.substring(0,3) == "[P]" && role.name.toLowerCase().includes(args[0])));
 		if(prRole){

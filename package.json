@@ -1,6 +1,6 @@
 {
   "name": "pronounbot",
-  "version": "1.6.0",
+  "version": "1.6.2",
   "description": "Discord bot to control pronoun roles for servers",
   "repository": {
     "type": "git",

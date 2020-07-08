@@ -1,13 +1,16 @@
 {
   "name": "pronounbot",
-  "version": "1.5.6",
-  "description": "Discord bot to control pronoun roles for queer servers",
+  "version": "1.6.0",
+  "description": "Discord bot to control pronoun roles for servers",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vsams14/pronounbot.git"
+  },
   "main": "bot.js",
   "dependencies": {
-    "discord.js": "^11.4.2",
-    "enmap": "^4.6.0",
-    "fs": "0.0.1-security",
-    "self-reload-json": "^0.4.0"
+    "discord.js": "^11.6.4",
+    "enmap": "^4.8.7",
+    "fs": "0.0.1-security"
   },
   "devDependencies": {},
   "scripts": {
@@ -15,13 +18,11 @@
     "start": "node bot.js"
   },
   "keywords": [
-    "heroku",
     "discord.js"
   ],
   "author": "space-pagan",
   "license": "GPL-3.0-or-later",
   "engines": {
-    "node": "11.6.0",
-    "npm": "6.5.0-next.0"
+    "node": "14.5.0"
   }
 }

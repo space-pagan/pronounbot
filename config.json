@@ -1,12 +1,5 @@
 {
-  "prefix": "/pronoun",
-  "welcomeChannel": "intros",
-  "welcomeChannelList": [
-    "faq",
-    "roles",
-    "server-rules"
-  ],
-  "requestChannel": "bottest",
+  "prefix": "/pb",
   "commands": [
     {
 	  "name":"help",
@@ -15,36 +8,24 @@
 	  "usage":"help [CommandName]"
 	},
 	{
-	  "name":"load",
-	  "hidden":true,
-	  "description":"",
-	  "usage":"load CommandName"
-	},
-	{
-	  "name":"reload",
-	  "hidden":true,
-	  "description":"",
-	  "usage":"reload"
-	},
-	{
 	  "name":"set",
 	  "hidden":false,
-	  "description":"Assigns the user a new pronoun role. Previous pronouns are removed.",
-	  "usage":"set PronounToSet",
+	  "description":"Adds a pronoun role to the user.",
+	  "usage":"set pronoun",
 	  "example":"set she"
+	},
+    {
+	  "name":"unset",
+	  "hidden":false,
+	  "description":"Removes a pronoun role from the user.",
+	  "usage":"unset pronoun",
+	  "example":"unset she"
 	},
 	{
 	  "name":"list",
 	  "hidden":false,
 	  "description":"Lists available pronoun roles.",
 	  "usage":"list"
-	},
-	{
-	  "name":"request",
-	  "hidden":false,
-	  "description":"Requests a pronoun role, to be accepted by a server moderator.",
-	  "usage":"request PronounToRequest #HexColor",
-	  "example":"request They/Them #9b59b6"
 	}
   ]
 }

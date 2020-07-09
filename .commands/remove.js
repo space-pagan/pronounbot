@@ -1,10 +1,9 @@
-exports.run = (client, message, args, prefix) => {
+exports.run = (client, message, args, prefix, rolefix) => {
 	if(args[0]){
-		var prRole = message.member.roles.find(role => (role.name.substring(0,3) == "[P]" && role.name.toLowerCase().includes(args[0])));
+		var prRole = message.member.roles.find(role => role.name.indexOf(rolefix) == 0 && role.name.toLowerCase().includes(args[0].toLowerCase()));
 		if(prRole){
-			var prName = prRole.name;
             message.member.removeRole(prRole).catch(console.error);
-			message.channel.send(message.member + ", `" + prName.substring(4) + "` has been removed from your pronouns.");
+			message.channel.send(message.member + ", `" + prRole.name.substring(rolefix.length).trim() + "` has been removed from your pronouns.");
 		}else{
 			message.channel.send(message.member + ', you do not have the pronoun role `' + args[0] + '`!');
 		}

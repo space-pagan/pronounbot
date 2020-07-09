@@ -1,38 +1,40 @@
 {
     "prefix": "/pb",
+    "rolefix": "[P] ",
     "commands": [
         {
-            "name":"help",
-            "hidden":true,
-            "description":"",
-            "usage":"help [CommandName]"
-        },
-        {
             "name":"add",
-            "hidden":false,
+            "admin":false,
             "description":"Adds a pronoun role to the user.",
             "usage":"add pronoun",
             "example":"add she"
         },
         {
             "name":"remove",
-            "hidden":false,
+            "admin":false,
             "description":"Removes a pronoun role from the user.",
             "usage":"remove pronoun",
             "example":"remove she"
         },
         {
             "name":"list",
-            "hidden":false,
+            "admin":false,
             "description":"Lists available pronoun roles.",
             "usage":"list"
         },
         {
             "name":"prefix",
-            "hidden":false,
+            "admin":true,
             "description":"[ADMIN ONLY] Changes the bot command prefix for this server.",
             "usage":"prefix pre",
             "example":"prefix !pb"
+        },
+        {
+            "name":"rolefix",
+            "admin":true,
+            "description":"[ADMIN ONLY] Changes the recognized role prefix for this server.",
+            "usage":"rolefix pre",
+            "example":"rolefix [P]"
         }
     ]
 }

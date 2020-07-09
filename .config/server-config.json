@@ -2,8 +2,8 @@
 	"servers": [
 		{
 			"id": "692105145672269967",
-			"prefix": "!pronoun",
-			"rolefix": "[P]"
+			"prefix": "!pb",
+			"rolefix": "[P]\\"
 		}
 	]
 }
